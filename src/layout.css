@@ -1,0 +1,130 @@
+#components-layout-demo-top-side .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .ant-row-rtl #components-layout-demo-top-side .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+  }
+  
+.site-layout-background {
+    background: #fff;
+}
+  .main{
+      border-radius: 25px 25px 25px 25px;
+      background: #fff;
+  }
+
+.side{
+    min-width: 100px !important;
+    width:100px !important;
+    flex: none !important;
+    transition: width 0.5s;
+    
+}
+.side:hover{
+  
+    width:200px !important;
+   
+}
+  .curvemenu{
+      position: relative;
+      width:100px;
+      height: 100%;
+      background-color: rgb(204, 230, 233);
+      border-radius: 10px 10px 10px 10px;
+      overflow-x: hidden;
+      transition: width 0.5s;
+  }
+  .curvemenu:hover{
+width: 200px;
+  }
+
+ .curvemenu ul{
+     position:absolute;
+     width:100%;
+     height: 100%;
+     padding-top: 40px;
+ }
+
+ .curvemenu ul li{
+    position:relative;
+    width:100%;
+    list-style: none;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+   
+}
+.curvemenu ul li.liactiv {
+  background-color:#fff;
+  color:black
+   
+}
+.curvemenu ul li.liactiv a::before {
+    content:'';
+    position:absolute;
+    top:-30px;
+    right:0;
+    width:30px;
+    height:30px;
+    background-color:rgb(204, 230, 233);
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #fff;
+     
+  }
+  .curvemenu ul li.liactiv a::after{
+    content:'';
+    position:absolute;
+    bottom:-30px;
+    right:0;
+    width:30px;
+    height:30px;
+    background-color:rgb(204, 230, 233);
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #fff;
+     
+  }
+.curvemenu ul li a{
+    position:relative;
+    display: block;
+    width:100%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    line-height: 60px;
+   
+}
+
+.curvemenu ul li a .icon {
+    position:relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.curvemenu ul li a .icon ion-icon{
+    position:relative;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.curvemenu ul li a .icon ion-icon .stext{
+    position:relative;
+    display: block;
+    height: 60px;
+    padding-left: 10px;
+    white-space: nowrap;
+    
+}
+
+.con{
+    scroll-behavior: smooth;
+    transition: width 0.5s;
+    
+}
